@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>カラーコード変換</title>
+    <link rel="icon" type="image/png" href="photo/bird2.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=DotGothic16&display=swap" rel="stylesheet">
+</head>
+<body class="lang-ja">
+    <script>
+        const isError = false; // 調整時のみtrue
+        if (isError) {
+            window.location.href = "https://tybob8010.github.io/error";
+        }
+    </script>
+
+    <h1 class="title">カラーコードビューワー</h1>
+
+    <div class="content">
+        <p>カラーコードの色を表示します。</p>
+        <p>カラーコード（例：#ff5733）を入力してください。</p>
+        <input type="text" id="colorInput" placeholder="#ff5733" style="width:100%; font-size:16px; padding:8px;">
+        <div id="colorDisplay" style="margin-top:20px; width:100%; height:200px; border:2px solid #fff; border-radius:8px; background:#000;"></div>
+        <p id="colorCode" style="text-align:center; font-weight:bold; margin-top:10px;">未入力</p>
+        <p>例: <a href="#" onclick="setExample('#00ff00')">#00ff00</a> / <a href="#" onclick="setExample('#ff00ff')">#ff00ff</a></p>
+    </div>
+
+    <div class="footer">
+        <div class="lang-ja">
+            <p>© 2025 <a href="https://tybob8010.github.io">tybob</a> 
+            <a href="https://tybob8010.github.io/privacypolicy">プライバシーポリシー</a> 
+            <a href="https://tybob8010.github.io/termsofservice">利用規約</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
